@@ -1,4 +1,4 @@
-# Copyright (C) 2011 The Android Open Source Project
+# Copyright (C) 2013 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,12 +24,13 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from jfltetmo device
-$(call inherit-product, device/samsung/jfltetmo/device.mk)
+# Inherit from hltecan device
+$(call inherit-product, device/samsung/hltecan/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_jfltetmo
-PRODUCT_DEVICE := jfltetmo
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+PRODUCT_NAME := full_hltetmo
+PRODUCT_DEVICE := hltetmo
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SGH-M919
+PRODUCT_MODEL := SM-N900W8

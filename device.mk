@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2011 The CyanogenMod Project
+# Copyright (C) 2013 The Open Kang Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,12 +15,12 @@
 #
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/jfltetmo/jfltetmo-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/hltecan/hltecan-vendor.mk)
 
 ## device overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/hltecan/overlay
 ## common overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/hlte-common/overlay-gsm
 
-# Inherit from jf-common
+# Inherit from hlte-common
 $(call inherit-product, device/samsung/hlte-common/hlte-common.mk)

@@ -28,7 +28,7 @@
 -include vendor/samsung/hltecan/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := hltecan
+TARGET_OTA_ASSERT_DEVICE := hltecan,SM-N900W8
 
 # Kernel
 TARGET_KERNEL_CONFIG         := hltecan_defconfig
